@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ezinne Kalu — Application Security Engineer</title>
+  <meta name="description" content="Application Security Engineer specializing in web application security, penetration testing, and threat modeling." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CDN -->
+  <link rel="preconnect" href="https://cdn.tailwindcss.com" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: {
+              900: '#0f172a',
+              800: '#1e293b',
+              700: '#334155',
+            },
+            teal: {
+              500: '#0d9488',
+              400: '#14b8a6',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="font-sans bg-white text-slate-800 antialiased">
+
+  <!-- NAVIGATION -->
+  <nav id="nav" class="fixed top-0 left-0 right-0 z-50 bg-navy-900 border-b border-slate-700">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+      <span class="text-white font-semibold tracking-tight">Ezinne Kalu</span>
+      <ul class="flex gap-6 text-sm text-slate-300">
+        <li><a href="#about" class="hover:text-white transition-colors">About</a></li>
+        <li><a href="#certifications" class="hover:text-white transition-colors">Certifications</a></li>
+        <li><a href="#speaking" class="hover:text-white transition-colors">Speaking</a></li>
+        <li><a href="#writing" class="hover:text-white transition-colors">Writing</a></li>
+        <li><a href="#contact" class="hover:text-teal-400 transition-colors font-medium">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero" class="bg-navy-900 pt-32 pb-24 px-6">
+    <div class="max-w-5xl mx-auto">
+      <p class="text-teal-400 text-sm font-medium tracking-widest uppercase mb-4">Application Security</p>
+      <h1 class="text-5xl md:text-6xl font-bold text-white leading-tight mb-6">
+        Ezinne Kalu
+      </h1>
+      <p class="text-xl md:text-2xl text-slate-300 font-light mb-4">
+        Application Security Engineer
+      </p>
+      <p class="text-slate-400 text-lg max-w-2xl leading-relaxed">
+        I research how vulnerabilities actually come to exist — not just what they are —
+        and translate that into better defenses, clearer security education, and more honest threat modeling.
+      </p>
+      <div class="mt-10 flex flex-wrap gap-4">
+        <a href="#speaking" class="px-6 py-3 bg-teal-500 text-white rounded-lg font-medium hover:bg-teal-400 transition-colors text-sm">
+          View Talks
+        </a>
+        <a href="#contact" class="px-6 py-3 border border-slate-600 text-slate-300 rounded-lg font-medium hover:border-teal-400 hover:text-teal-400 transition-colors text-sm">
+          Get in Touch
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-20 px-6 bg-white">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="section-heading">About</h2>
+      <div class="mt-8 grid md:grid-cols-3 gap-12">
+        <div class="md:col-span-2">
+          <p class="text-slate-600 leading-relaxed text-lg mb-5">
+            I'm an Application Security Engineer with a focus on web application security, penetration testing, secure code review, and threat modeling.
+            My work sits at the intersection of attack and defense — understanding the conditions that make vulnerabilities possible,
+            so teams can build systems that are genuinely harder to break.
+          </p>
+          <p class="text-slate-600 leading-relaxed text-lg mb-5">
+            I've developed the <strong class="text-slate-800">Vulnerability Conditions Framework</strong> — a methodology for decomposing web vulnerabilities
+            into their required preconditions, making security analysis more systematic and less dependent on pattern-matching.
+          </p>
+          <p class="text-slate-600 leading-relaxed text-lg">
+            Beyond technical work, I speak at security conferences, write about application security concepts, and contribute to
+            making security knowledge more accessible to engineers and practitioners.
+          </p>
+        </div>
+        <div class="space-y-4">
+          <div class="expertise-tag">Web Application Security</div>
+          <div class="expertise-tag">Penetration Testing</div>
+          <div class="expertise-tag">Secure Code Review</div>
+          <div class="expertise-tag">Threat Modeling</div>
+          <div class="expertise-tag">API Security</div>
+          <div class="expertise-tag">DevSecOps</div>
+          <div class="expertise-tag">GRC &amp; Compliance</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" class="py-20 px-6 bg-slate-50">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="section-heading">Certifications</h2>
+
+      <!-- GWEB: featured, most prestigious -->
+      <div class="mt-8 mb-6 p-6 bg-navy-900 rounded-xl flex items-start gap-5">
+        <div class="w-12 h-12 rounded-lg bg-teal-500 flex items-center justify-center flex-shrink-0">
+          <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+          </svg>
+        </div>
+        <div>
+          <div class="flex items-center gap-3 mb-1">
+            <h3 class="text-white font-semibold text-lg">GIAC Web Application Defender (GWEB)</h3>
+            <span class="px-2 py-0.5 bg-teal-500 text-white text-xs font-medium rounded">SANS/GIAC</span>
+          </div>
+          <p class="text-slate-400 text-sm">Advanced certification in web application security — covering attack techniques, defense strategies, and secure development practices.</p>
+        </div>
+      </div>
+
+      <!-- Other certs -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+
+        <div class="card cert-card">
+          <div class="card-label mb-1.5">CompTIA</div>
+          <div class="cert-name">Advanced Security Practitioner (CASP+)</div>
+        </div>
+
+        <div class="card cert-card">
+          <div class="card-label mb-1.5">CompTIA</div>
+          <div class="cert-name">Security+</div>
+        </div>
+
+        <div class="card cert-card">
+          <div class="card-label mb-1.5">ISC2</div>
+          <div class="cert-name">Certified in Cybersecurity (CC)</div>
+        </div>
+
+        <div class="card cert-card">
+          <div class="card-label mb-1.5">Practical DevSecOps</div>
+          <div class="cert-name">Certified DevSecOps Professional (CDP)</div>
+        </div>
+
+        <div class="card cert-card">
+          <div class="card-label mb-1.5">Practical DevSecOps</div>
+          <div class="cert-name">Certified Threat Modeling Professional (CTMP)</div>
+        </div>
+
+        <div class="card cert-card">
+          <div class="card-label mb-1.5">Practical DevSecOps</div>
+          <div class="cert-name">Certified Container Security Expert (CCSE)</div>
+        </div>
+
+        <div class="card cert-card">
+          <div class="card-label mb-1.5">Practical DevSecOps</div>
+          <div class="cert-name">Certified Cloud-Native Security Expert (CCNSE)</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SPEAKING -->
+  <section id="speaking" class="py-20 px-6 bg-white">
+    <div class="max-w-5xl mx-auto">
+      <div class="flex items-end justify-between mb-8">
+        <h2 class="section-heading">Speaking</h2>
+        <a href="#contact" class="text-teal-500 text-sm font-medium hover:text-teal-400 transition-colors">
+          Available to speak →
+        </a>
+      </div>
+
+      <div class="space-y-5">
+
+        <div class="card talk-card">
+          <div class="card-label mb-2">API Security</div>
+          <h3 class="talk-title">Postman for API Security Testing</h3>
+          <p class="talk-desc">A practical introduction to using Postman as a tool for identifying and testing API security vulnerabilities.</p>
+        </div>
+
+        <div class="card talk-card">
+          <div class="card-label mb-2">Privacy &amp; Compliance</div>
+          <h3 class="talk-title">Data Privacy in Modern Applications</h3>
+          <p class="talk-desc">Exploring how applications handle personal data, common privacy failure modes, and practical steps toward compliance.</p>
+        </div>
+
+        <div class="card talk-card">
+          <div class="card-label mb-2">Bug Bounty</div>
+          <h3 class="talk-title">Introduction to Bug Bounty Hunting</h3>
+          <p class="talk-desc">An accessible entry point to the bug bounty ecosystem — from choosing programs to writing your first report.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WRITING -->
+  <section id="writing" class="py-20 px-6 bg-slate-50">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="section-heading">Writing</h2>
+      <div class="mt-8 p-8 border border-slate-200 rounded-xl text-center">
+        <p class="text-slate-500 text-sm uppercase tracking-widest mb-3">Coming Soon</p>
+        <p class="text-slate-600 text-lg max-w-lg mx-auto">
+          Articles on application security, vulnerability research, and the
+          <strong class="text-slate-800">Vulnerability Conditions Framework</strong> — coming soon.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-20 px-6 bg-navy-900">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-white mb-4">Get in Touch</h2>
+      <p class="text-slate-400 text-lg mb-10 max-w-xl mx-auto">
+        Whether it's a speaking opportunity, security consultation, or just a conversation about appsec —
+        I'd love to hear from you.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <!-- Replace with your actual email address -->
+        <a href="mailto:ezinne@ezinnekalu.com" class="px-8 py-4 bg-teal-500 text-white rounded-lg font-medium hover:bg-teal-400 transition-colors">
+          Send an Email
+        </a>
+        <a href="https://www.linkedin.com/in/theezinnekalu/" target="_blank" rel="noopener noreferrer" class="px-8 py-4 border border-slate-600 text-slate-300 rounded-lg font-medium hover:border-teal-400 hover:text-teal-400 transition-colors">
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-navy-900 border-t border-slate-800 py-6 px-6 text-center">
+    <p class="text-slate-600 text-sm">© 2026 Ezinne Kalu</p>
+  </footer>
+
+</body>
+</html>
