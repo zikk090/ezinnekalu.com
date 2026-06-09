@@ -5,22 +5,22 @@ export function VCF() {
   const { ref, inView } = useInView();
 
   return (
-    <section id="vcf" className="py-24">
+    <section id="vcf" className="py-24 bg-background">
       <div className="max-w-4xl mx-auto px-6">
         <div
           ref={ref}
-          className={`relative border-l-4 border-blue-500 pl-8 bg-gradient-to-r from-blue-500/5 to-transparent rounded-r-2xl p-8 sm:p-12 transition-all duration-300 ease-out ${
+          className={`relative border-l-4 border-accent pl-8 bg-gradient-to-r from-amber-50 to-transparent rounded-r-2xl p-8 sm:p-12 transition-all duration-300 ease-out ${
             inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          <p className="text-blue-500 text-sm font-medium tracking-widest uppercase mb-3">
+          <p className="text-accent text-sm font-medium tracking-widest uppercase mb-3 font-sans">
             Signature Methodology
           </p>
-          <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-white">
+          <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#1c1917] mb-6">
             The Vulnerability Conditions Framework
           </h2>
 
-          <div className="space-y-4 text-neutral-300 text-lg leading-relaxed">
+          <div className="space-y-4 text-[#78716c] text-lg leading-relaxed">
             <p>
               Most people think about web vulnerabilities as isolated bugs. I
               think about them as conditions.
@@ -40,9 +40,9 @@ export function VCF() {
 
           <a
             href="#"
-            className="text-blue-400 hover:text-blue-300 font-medium mt-6 inline-block"
+            className="text-accent hover:text-[#92400e] font-medium mt-6 inline-block font-sans"
           >
-            Read the Framework →
+            Read my framework →
           </a>
         </div>
       </div>

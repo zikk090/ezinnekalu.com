@@ -5,7 +5,7 @@ export function WhoIAm() {
   const { ref, inView } = useInView();
 
   return (
-    <section id="who-i-am" className="py-24">
+    <section id="who-i-am" className="py-24 bg-background">
       <div className="max-w-6xl mx-auto px-6">
         <div
           ref={ref}
@@ -13,14 +13,14 @@ export function WhoIAm() {
             inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          <p className="text-blue-500 text-sm font-medium tracking-widest uppercase mb-4">
+          <p className="text-[#b45309] text-sm font-medium tracking-widest uppercase mb-4 font-sans">
             About
           </p>
-          <h2 className="text-4xl font-bold mb-12">
+          <h2 className="font-serif text-4xl font-bold text-[#1c1917] mb-12">
             Security Is What I Do. Building Is Who I Am.
           </h2>
 
-          <div className="max-w-3xl space-y-6 text-neutral-300 text-lg leading-relaxed">
+          <div className="max-w-3xl space-y-6 text-[#78716c] text-lg leading-relaxed">
             <p>I didn&apos;t start in cybersecurity.</p>
             <p>
               I spent years studying medicine before realizing I was more
@@ -33,7 +33,10 @@ export function WhoIAm() {
               API security, threat modeling, DevSecOps, and security research.
               I hold industry certifications including SANS GWEB, CompTIA
               CASP+, and certifications in DevSecOps, threat modeling,
-              container security, and cloud-native security.
+              container security, and cloud-native security. I also work at the
+              intersection of AI and security — exploring how large language
+              models introduce new attack surfaces and how they can be used to
+              accelerate security engineering.
             </p>
             <p>
               I&apos;ve helped organizations identify vulnerabilities before

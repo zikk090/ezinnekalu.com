@@ -56,7 +56,7 @@ export function Projects() {
   const { ref, inView } = useInView();
 
   return (
-    <section id="projects" className="py-24">
+    <section id="projects" className="py-24 bg-background">
       <div className="max-w-6xl mx-auto px-6">
         <div
           ref={ref}
@@ -64,31 +64,33 @@ export function Projects() {
             inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          <p className="text-blue-500 text-sm font-medium tracking-widest uppercase mb-4">
+          <p className="text-[#b45309] text-sm font-medium tracking-widest uppercase mb-4 font-sans">
             Work
           </p>
-          <h2 className="text-4xl font-bold">What I&apos;ve Built</h2>
+          <h2 className="font-serif text-4xl font-bold text-[#1c1917]">
+            What I&apos;ve Built
+          </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
             {projects.map((project) => {
               const card = (
                 <>
-                  <h3 className="text-lg font-semibold text-white mb-2">
+                  <h3 className="text-[#1c1917] text-lg font-semibold mb-2 font-sans">
                     {project.title}
                   </h3>
-                  <p className="text-neutral-400 text-sm leading-relaxed flex-1">
+                  <p className="text-[#78716c] text-sm leading-relaxed flex-1">
                     {project.description}
                   </p>
                   <div className="mt-4 flex flex-wrap gap-2">
                     {project.isInProgress && (
-                      <span className="bg-blue-500/10 text-blue-400 text-xs px-2.5 py-1 rounded-full">
+                      <span className="bg-amber-50 text-accent text-xs px-2.5 py-1 rounded-full">
                         In Progress
                       </span>
                     )}
                     {project.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="bg-card text-neutral-500 text-xs px-2.5 py-1 rounded-full"
+                        className="bg-surface text-[#78716c] text-xs px-2.5 py-1 rounded-full"
                       >
                         {tag}
                       </span>
@@ -98,7 +100,7 @@ export function Projects() {
               );
 
               const className =
-                "bg-surface border border-white/5 rounded-xl p-6 flex flex-col hover:border-white/20 transition-colors group";
+                "bg-card border border-[#e8e3db] rounded-xl p-6 flex flex-col hover:border-[#1c1917]/20 transition-colors";
 
               if (project.href) {
                 return (

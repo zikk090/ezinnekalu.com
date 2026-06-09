@@ -1,7 +1,24 @@
 "use client";
+import type { ReactNode } from "react";
 import { useInView } from "@/hooks/use-in-view";
 
-const entries = [
+type Entry = {
+  role: string;
+  description: ReactNode;
+};
+
+const entries: Entry[] = [
+  {
+    role: "President, CyberGirls Alumni Community",
+    description: (
+      <>
+        Leading the alumni network of Africa&apos;s largest women-in-cybersecurity program.{" "}
+        <a href="#" className="text-accent hover:underline">
+          CyberGirls Alumni
+        </a>
+      </>
+    ),
+  },
   {
     role: "Systems Development Engineer",
     description:
@@ -41,20 +58,22 @@ export function Timeline() {
             inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          <p className="text-blue-500 text-sm font-medium tracking-widest uppercase mb-4">
+          <p className="text-[#b45309] text-sm font-medium tracking-widest uppercase mb-4 font-sans">
             Career
           </p>
-          <h2 className="text-4xl font-bold">A Few Stops Along The Way</h2>
+          <h2 className="font-serif text-4xl font-bold text-[#1c1917]">
+            A Few Stops Along The Way
+          </h2>
 
           <div className="mt-12 relative pl-8">
-            <div className="absolute left-0 top-0 bottom-0 w-px bg-white/10" />
+            <div className="absolute left-0 top-0 bottom-0 w-px bg-[#e8e3db]" />
             {entries.map((entry) => (
               <div key={entry.role} className="relative mb-12 last:mb-0">
-                <span className="absolute -left-[33px] top-1 w-3 h-3 rounded-full bg-blue-500 border-2 border-[#0d0d0d]" />
-                <h3 className="text-xl font-semibold text-white">
+                <span className="absolute -left-[33px] top-1 w-3 h-3 rounded-full bg-accent border-2 border-surface" />
+                <h3 className="text-[#1c1917] text-xl font-semibold font-sans">
                   {entry.role}
                 </h3>
-                <p className="text-neutral-400 mt-2 leading-relaxed max-w-2xl">
+                <p className="text-[#78716c] mt-2 leading-relaxed max-w-2xl">
                   {entry.description}
                 </p>
               </div>

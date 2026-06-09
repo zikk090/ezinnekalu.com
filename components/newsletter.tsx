@@ -5,7 +5,7 @@ export function Newsletter() {
   const { ref, inView } = useInView();
 
   return (
-    <section id="newsletter" className="py-24">
+    <section id="newsletter" className="py-24 bg-background">
       <div className="max-w-6xl mx-auto px-6">
         <div
           ref={ref}
@@ -13,37 +13,36 @@ export function Newsletter() {
             inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          <p className="text-blue-500 text-sm font-medium tracking-widest uppercase mb-4">
+          <p className="text-accent text-sm font-medium tracking-widest uppercase mb-4 font-sans">
             Newsletter
           </p>
-          <h2 className="text-4xl font-bold">Notes From The Field</h2>
+          <h2 className="font-serif text-4xl font-bold text-[#1c1917]">
+            Notes From The Field
+          </h2>
 
-          <div className="text-neutral-400 mt-4 leading-relaxed space-y-2">
+          <div className="text-[#78716c] mt-4 leading-relaxed space-y-2">
             <p>
-              Every few weeks I share lessons from security engineering,
-              security research, product building, and personal growth.
+              I try to share lessons from security engineering, security
+              research, product building and life hacking.
             </p>
-            <p>
-              No fluff. Just practical insights and things I&apos;ve learned the
-              hard way.
-            </p>
+            <p>No fluff. Just things I&apos;ve learned the hard way.</p>
           </div>
 
           <div className="mt-10 flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
             <input
               type="email"
               placeholder="Your email address"
-              className="bg-white/5 border border-white/10 text-white placeholder:text-neutral-500 px-4 py-3 rounded-lg flex-1 focus:outline-none focus:border-blue-500 transition-colors"
+              className="bg-white border border-[#e8e3db] text-[#1c1917] placeholder:text-[#78716c] px-4 py-3 rounded-lg flex-1 focus:outline-none focus:border-accent transition-colors"
             />
             <button
               type="button"
-              className="bg-blue-500 hover:bg-blue-400 text-white px-6 py-3 rounded-lg font-medium transition-colors whitespace-nowrap"
+              className="bg-[#1c1917] hover:bg-[#2c2927] text-white px-6 py-3 rounded-lg font-medium transition-colors whitespace-nowrap text-sm font-sans"
             >
               Subscribe
             </button>
           </div>
 
-          <p className="mt-4 text-neutral-600 text-sm">
+          <p className="mt-4 text-[#78716c] text-sm">
             No spam. Unsubscribe anytime.
           </p>
         </div>

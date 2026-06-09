@@ -18,6 +18,7 @@ const cards = [
     items: [
       "Bug Bounty Hunting",
       "API Security Research",
+      "AI & LLM Security Research",
       "Vulnerability Discovery",
       "The Vulnerability Conditions Framework",
       "Security Writing",
@@ -27,6 +28,7 @@ const cards = [
     title: "Building Products",
     items: [
       "Developer Tools",
+      "AI-Powered Security Tools",
       "Authentication Systems",
       "Security Platforms",
       "Automation Workflows",
@@ -57,27 +59,29 @@ export function WhatIDo() {
             inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          <p className="text-blue-500 text-sm font-medium tracking-widest uppercase mb-4">
+          <p className="text-[#b45309] text-sm font-medium tracking-widest uppercase mb-4 font-sans">
             What I Do
           </p>
-          <h2 className="text-4xl font-bold">What I Spend My Time On</h2>
+          <h2 className="font-serif text-4xl font-bold text-[#1c1917]">
+            What I Spend My Time On
+          </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
             {cards.map((card) => (
               <div
                 key={card.title}
-                className="bg-card border border-white/5 rounded-xl p-8 hover:border-blue-500/30 transition-colors"
+                className="bg-card border border-[#e8e3db] rounded-xl p-8 hover:border-accent/40 transition-colors"
               >
-                <h3 className="text-xl font-semibold mb-4 text-white">
+                <h3 className="text-[#1c1917] text-xl font-semibold mb-4 font-sans">
                   {card.title}
                 </h3>
                 <ul className="space-y-2">
                   {card.items.map((item) => (
                     <li
                       key={item}
-                      className="text-neutral-400 text-sm flex items-center gap-2"
+                      className="text-[#78716c] text-sm flex items-center gap-2"
                     >
-                      <span className="w-1.5 h-1.5 rounded-full bg-blue-500 flex-shrink-0" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0" />
                       {item}
                     </li>
                   ))}

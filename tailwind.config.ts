@@ -5,13 +5,15 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "#0d0d0d",
-        surface: "#111111",
-        card: "#1a1a1a",
-        accent: "#3B82F6",
+        background: "#faf8f5",
+        surface: "#f5f1ec",
+        card: "#ffffff",
+        border: "#e8e3db",
+        accent: "#b45309",
       },
       fontFamily: {
         sans: ["var(--font-inter)", "sans-serif"],
+        serif: ["var(--font-lora)", "Georgia", "serif"],
       },
     },
   },

@@ -26,24 +26,26 @@ export function Writing() {
             inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          <p className="text-blue-500 text-sm font-medium tracking-widest uppercase mb-4">
+          <p className="text-[#b45309] text-sm font-medium tracking-widest uppercase mb-4 font-sans">
             Writing
           </p>
-          <h2 className="text-4xl font-bold">Research, Notes &amp; Lessons</h2>
+          <h2 className="font-serif text-4xl font-bold text-[#1c1917]">
+            Research, Notes &amp; Lessons
+          </h2>
 
-          <div className="text-neutral-400 text-lg max-w-2xl mt-4 leading-relaxed">
+          <div className="text-[#78716c] text-lg max-w-2xl mt-4 leading-relaxed">
             <p>
               I write about security engineering, security research, startup
               building, and systems thinking.
             </p>
-            <p className="mt-4 text-neutral-500">Topics I cover:</p>
+            <p className="mt-4 text-[#78716c]">Topics I cover:</p>
           </div>
 
           <div className="mt-8 flex flex-wrap gap-3">
             {topics.map((topic) => (
               <span
                 key={topic}
-                className="border border-white/10 text-neutral-300 px-4 py-2 rounded-full text-sm hover:border-blue-500/50 hover:text-blue-400 transition-colors cursor-default"
+                className="border border-[#e8e3db] text-[#78716c] px-4 py-2 rounded-full text-sm hover:border-accent/50 hover:text-accent transition-colors cursor-default"
               >
                 {topic}
               </span>
@@ -52,7 +54,7 @@ export function Writing() {
 
           <a
             href="/writing"
-            className="mt-10 inline-flex items-center gap-2 bg-white/5 hover:bg-white/10 border border-white/10 text-white px-6 py-3 rounded-lg font-medium transition-colors"
+            className="mt-10 inline-flex items-center gap-2 bg-[#1c1917] text-white hover:bg-[#2c2927] px-6 py-3 rounded-lg text-sm font-medium transition-colors font-sans"
           >
             Read Articles →
           </a>
