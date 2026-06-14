@@ -32,7 +32,7 @@ export function Newsletter() {
             <iframe
               src="https://subscribe-forms.beehiiv.com/v3/forms/05d8b51e-59ce-41a5-9b46-07ef02367f6e"
               className="w-full"
-              style={{ height: 320, border: "none" }}
+              style={{ height: 207, border: "none" }}
               title="Subscribe to Notes From The Field"
               scrolling="no"
             />
