@@ -28,23 +28,15 @@ export function Newsletter() {
             <p>No fluff. Just things I&apos;ve learned the hard way.</p>
           </div>
 
-          <div className="mt-10 flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-            <input
-              type="email"
-              placeholder="Your email address"
-              className="bg-white border border-[#e8e3db] text-[#1c1917] placeholder:text-[#78716c] px-4 py-3 rounded-lg flex-1 focus:outline-none focus:border-accent transition-colors"
+          <div className="mt-10 max-w-md mx-auto">
+            <iframe
+              src="https://subscribe-forms.beehiiv.com/v3/forms/05d8b51e-59ce-41a5-9b46-07ef02367f6e"
+              className="w-full"
+              style={{ height: 320, border: "none" }}
+              title="Subscribe to Notes From The Field"
+              scrolling="no"
             />
-            <button
-              type="button"
-              className="bg-[#1c1917] hover:bg-[#2c2927] text-white px-6 py-3 rounded-lg font-medium transition-colors whitespace-nowrap text-sm font-sans"
-            >
-              Subscribe
-            </button>
           </div>
-
-          <p className="mt-4 text-[#78716c] text-sm">
-            No spam. Unsubscribe anytime.
-          </p>
         </div>
       </div>
     </section>
