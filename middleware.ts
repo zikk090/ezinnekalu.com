@@ -3,7 +3,7 @@ import { NextRequest, NextResponse } from "next/server";
 export function middleware(request: NextRequest) {
   const hostname = request.headers.get("host") || "";
 
-  if (hostname.startsWith("aurora.") && request.nextUrl.pathname === "/") {
+  if (hostname.startsWith("aurora.") && request.nextUrl.pathname === "/privacy") {
     return NextResponse.rewrite(new URL("/aurora/privacy", request.url));
   }
 
@@ -11,5 +11,5 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/"],
+  matcher: ["/privacy"],
 };
