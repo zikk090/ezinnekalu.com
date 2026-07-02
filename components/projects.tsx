@@ -37,6 +37,14 @@ const projects: Project[] = [
     href: "https://github.com/zikk090/termclean",
   },
   {
+    title: "Aurora",
+    description:
+      "AI-powered iOS alarm and morning briefing app. Wakes you reliably and plays a personalized spoken briefing covering your calendar, reminders, tasks, and weather. Currently in TestFlight beta.",
+    tags: ["Swift", "SwiftUI", "SwiftData", "Claude"],
+    // TODO: swap in the real App Store URL once Aurora is approved and public
+    href: "#",
+  },
+  {
     title: "Authentication Gateway",
     description:
       "Passkeys, SSO, access control, and identity infrastructure for modern applications.",
