@@ -3,6 +3,7 @@ import { Hero } from "@/components/hero";
 import { WhoIAm } from "@/components/who-i-am";
 import { WhatIDo } from "@/components/what-i-do";
 import { VCF } from "@/components/vcf";
+import { CVECredits } from "@/components/cve-credits";
 import { Timeline } from "@/components/timeline";
 import { Projects } from "@/components/projects";
 import { Writing } from "@/components/writing";
@@ -20,6 +21,7 @@ export default function Home() {
       <WhoIAm />
       <WhatIDo />
       <VCF />
+      <CVECredits />
       <Timeline />
       <Projects />
       <Writing />

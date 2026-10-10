@@ -2,6 +2,7 @@
 import { useInView } from "@/hooks/use-in-view";
 
 const previousTalks = [
+  "Securing the \"Vibe-coded\" SDLC: Threat Modeling and Hardening AI Development with Kiro (AWS Community Day West Africa)",
   "Postman for API Security",
   "Data Privacy in Modern Applications",
   "Introduction to Bug Bounty Hunting",

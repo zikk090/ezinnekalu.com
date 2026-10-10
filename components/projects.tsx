@@ -11,11 +11,11 @@ type Project = {
 
 const projects: Project[] = [
   {
-    title: "CyberGirls Letters",
+    title: "Traces",
     description:
-      "Recommendation letter ticketing system for CyberSafe Foundation alumni. Replaces lost email threads with a proper request and assignment workflow.",
-    tags: ["Next.js", "TypeScript", "Prisma", "SQLite"],
-    href: "https://github.com/zikk090/cybergirls-letters",
+      "A daily, timed evidence-verification game for iOS and Android. Players solve ethical OSINT-style cases using images, video, audio, documents, and maps, each ending in a source-backed debrief.",
+    tags: ["React Native", "Expo", "LangGraph"],
+    href: "https://github.com/zikk090/traces",
   },
   {
     title: "Electricity Global",
@@ -25,24 +25,10 @@ const projects: Project[] = [
     href: "https://github.com/zikk090/electricity-globe",
   },
   {
-    title: "eztax",
-    description: "Tax calculation and reference tool for Nigerian professionals.",
-    tags: ["HTML", "JavaScript"],
-    href: "#",
-  },
-  {
     title: "termclean",
-    description: "A CLI tool for terminal cleanup and environment hygiene.",
+    description: "Copy cleanly from your terminal — strips ANSI codes and formatting junk on the way out.",
     tags: ["TypeScript", "CLI"],
     href: "https://github.com/zikk090/termclean",
-  },
-  {
-    title: "Aurora",
-    description:
-      "AI-powered iOS alarm and morning briefing app. Wakes you reliably and plays a personalized spoken briefing covering your calendar, reminders, tasks, and weather. Currently in TestFlight beta.",
-    tags: ["Swift", "SwiftUI", "SwiftData", "Claude"],
-    // TODO: swap in the real App Store URL once Aurora is approved and public
-    href: "#",
   },
   {
     title: "Authentication Gateway",
