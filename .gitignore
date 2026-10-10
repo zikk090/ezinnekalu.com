@@ -13,3 +13,9 @@
 *.pem
 .env*
 !.env.example
+
+# typescript
+*.tsbuildinfo
+
+# claude
+.claude/
